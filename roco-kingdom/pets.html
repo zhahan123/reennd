@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="洛克王国精灵图鉴 - 查询精灵属性、种族值、技能、进化路线">
+<title>精灵图鉴 - 洛克王国攻略站</title>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <span class="logo-icon">🏰</span>
+      <span>洛克攻略站</span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html">首页</a>
+      <a href="guides.html">攻略大全</a>
+      <a href="pets.html" class="active">精灵图鉴</a>
+      <a href="guide-detail.html?id=about">关于本站</a>
+    </div>
+    <div class="nav-search" id="navSearch">
+      <input type="text" placeholder="搜索攻略、精灵..." id="searchInput">
+      <button id="searchBtn">🔍</button>
+    </div>
+  </div>
+</nav>
+
+<section class="guide-header">
+  <div class="breadcrumb"><a href="index.html">首页</a> / 精灵图鉴</div>
+  <h1>🐾 精灵图鉴</h1>
+  <div class="meta">探索洛克王国的所有精灵 · 了解属性、技能、进化路线</div>
+</section>
+
+<div class="section">
+  <div class="container">
+
+    <!-- Search & Filter -->
+    <div class="search-box">
+      <input type="text" placeholder="搜索精灵名称、编号..." id="petSearchInput">
+      <button id="petSearchBtn">🔍 搜索</button>
+    </div>
+
+    <div class="filter-bar" id="petFilterBar">
+      <button class="filter-btn active" data-filter="all">全部属性</button>
+      <button class="filter-btn" data-filter="fire">🔥 火系</button>
+      <button class="filter-btn" data-filter="water">💧 水系</button>
+      <button class="filter-btn" data-filter="grass">🌿 草系</button>
+      <button class="filter-btn" data-filter="electric">⚡ 电系</button>
+      <button class="filter-btn" data-filter="ice">❄️ 冰系</button>
+      <button class="filter-btn" data-filter="dragon">🐉 龙系</button>
+      <button class="filter-btn" data-filter="ghost">👻 幽灵系</button>
+      <button class="filter-btn" data-filter="fairy">✨ 妖精系</button>
+      <button class="filter-btn" data-filter="dark">🌑 暗影系</button>
+    </div>
+
+    <!-- Results Info -->
+    <p style="color: var(--text-muted); margin-bottom: 20px; font-size: 0.9rem;" id="petResultInfo">
+      共 <span id="petResultCount">0</span> 只精灵
+    </p>
+
+    <!-- Pet Grid -->
+    <div class="cards-grid" id="petsGrid">
+      <!-- JS 动态填充 -->
+    </div>
+
+    <!-- Pagination -->
+    <div class="pagination" id="petPagination">
+      <!-- JS 动态填充 -->
+    </div>
+
+  </div>
+</div>
+
+<!-- Pet Detail Modal -->
+<div id="petModal" class="hidden" style="position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.6);z-index:9999;display:flex;align-items:center;justify-content:center;">
+  <div style="background:#fff;border-radius:var(--radius);max-width:600px;width:90%;max-height:85vh;overflow-y:auto;padding:32px;position:relative;">
+    <button id="closePetModal" style="position:absolute;top:16px;right:16px;background:none;border:none;font-size:1.5rem;line-height:1;">✕</button>
+    <div id="petModalContent">
+      <!-- JS 动态填充 -->
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-col">
+      <h4>🧭 导航</h4>
+      <a href="index.html">首页</a>
+      <a href="guides.html">攻略大全</a>
+      <a href="pets.html">精灵图鉴</a>
+    </div>
+    <div class="footer-col">
+      <h4>📂 攻略分类</h4>
+      <a href="guides.html?cat=pvp">PVP对战</a>
+      <a href="guides.html?cat=boss">BOSS攻略</a>
+      <a href="guides.html?cat=newbie">新手入门</a>
+      <a href="guides.html?cat=team">阵容推荐</a>
+    </div>
+    <div class="footer-col">
+      <h4>📞 关于</h4>
+      <a href="guide-detail.html?id=about">关于本站</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 洛克王国攻略站 · 玩家社区</p>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

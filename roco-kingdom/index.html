@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="洛克王国攻略资讯站 - 最新活动、精灵图鉴、副本攻略、阵容推荐，最全的洛克王国玩家社区">
+<title>洛克王国攻略站 - Roco Kingdom Guide</title>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- ======== Navbar ======== -->
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <span class="logo-icon">🏰</span>
+      <span>洛克攻略站</span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html" class="active">首页</a>
+      <a href="guides.html">攻略大全</a>
+      <a href="pets.html">精灵图鉴</a>
+      <a href="guide-detail.html?id=about">关于本站</a>
+    </div>
+    <div class="nav-search" id="navSearch">
+      <input type="text" placeholder="搜索攻略、精灵..." id="searchInput">
+      <button id="searchBtn">🔍</button>
+    </div>
+  </div>
+</nav>
+
+<!-- ======== Hero ======== -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>洛克王国<span class="accent">攻略资讯站</span></h1>
+    <p>最新活动资讯 · 精灵培养指南 · 副本通关攻略 · PVP阵容推荐<br>和千万小洛克一起，探索魔法世界的无限可能</p>
+    <div class="hero-btns">
+      <a href="guides.html" class="btn btn-primary">📖 查看攻略</a>
+      <a href="pets.html" class="btn btn-outline">🐾 精灵图鉴</a>
+    </div>
+  </div>
+</section>
+
+<!-- ======== Main Content ======== -->
+<div class="section">
+  <div class="container">
+    <div class="two-col">
+
+      <!-- ======== Left Column ======== -->
+      <div class="main-col">
+
+        <!-- Hot Guides -->
+        <div class="section-title">
+          <h2>🔥 热门攻略</h2>
+          <a href="guides.html" class="more-link">查看全部 →</a>
+        </div>
+        <div class="cards-grid" id="hotGuides">
+          <!-- JS 动态填充 -->
+        </div>
+
+        <!-- Latest News -->
+        <div class="section-title" style="margin-top: 40px;">
+          <h2>📢 最新资讯</h2>
+          <a href="guides.html?cat=news" class="more-link">更多资讯 →</a>
+        </div>
+        <div class="news-list" id="latestNews">
+          <!-- JS 动态填充 -->
+        </div>
+
+      </div>
+
+      <!-- ======== Sidebar ======== -->
+      <aside class="sidebar">
+
+        <!-- Hot Events -->
+        <div class="sidebar-widget">
+          <h3>🎪 当前活动</h3>
+          <div class="news-list" id="currentEvents">
+            <!-- JS 动态填充 -->
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="sidebar-widget">
+          <h3>🏷️ 热门标签</h3>
+          <div class="tag-cloud">
+            <a href="guides.html?tag=pvp" class="tag">PVP天梯</a>
+            <a href="guides.html?tag=boss" class="tag">BOSS攻略</a>
+            <a href="guides.html?tag=newbie" class="tag">新手必看</a>
+            <a href="guides.html?tag=team" class="tag">阵容搭配</a>
+            <a href="guides.html?tag=pet" class="tag">精灵培养</a>
+            <a href="guides.html?tag=event" class="tag">活动攻略</a>
+            <a href="guides.html?tag=dungeon" class="tag">副本通关</a>
+            <a href="guides.html?tag=secret" class="tag">隐藏任务</a>
+          </div>
+        </div>
+
+        <!-- Weekly Picks -->
+        <div class="sidebar-widget">
+          <h3>⭐ 每周推荐精灵</h3>
+          <div class="news-list" id="weeklyPet">
+            <!-- JS 动态填充 -->
+          </div>
+        </div>
+
+      </aside>
+    </div>
+  </div>
+</div>
+
+<!-- ======== Footer ======== -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-col">
+      <h4>🧭 导航</h4>
+      <a href="index.html">首页</a>
+      <a href="guides.html">攻略大全</a>
+      <a href="pets.html">精灵图鉴</a>
+    </div>
+    <div class="footer-col">
+      <h4>📂 攻略分类</h4>
+      <a href="guides.html?cat=pvp">PVP对战</a>
+      <a href="guides.html?cat=boss">BOSS攻略</a>
+      <a href="guides.html?cat=newbie">新手入门</a>
+      <a href="guides.html?cat=team">阵容推荐</a>
+    </div>
+    <div class="footer-col">
+      <h4>📞 关于</h4>
+      <a href="guide-detail.html?id=about">关于本站</a>
+      <p style="font-size:0.82rem;color:rgba(255,255,255,0.4);margin-top:8px;">本站为玩家社区站点，非官方运营</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 洛克王国攻略站 · 玩家社区 · 腾讯洛克王国游戏版权所有</p>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

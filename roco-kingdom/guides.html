@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="洛克王国攻略大全 - PVP天梯、BOSS攻略、新手入门、阵容推荐、活动攻略">
+<title>攻略大全 - 洛克王国攻略站</title>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <span class="logo-icon">🏰</span>
+      <span>洛克攻略站</span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html">首页</a>
+      <a href="guides.html" class="active">攻略大全</a>
+      <a href="pets.html">精灵图鉴</a>
+      <a href="guide-detail.html?id=about">关于本站</a>
+    </div>
+    <div class="nav-search" id="navSearch">
+      <input type="text" placeholder="搜索攻略、精灵..." id="searchInput">
+      <button id="searchBtn">🔍</button>
+    </div>
+  </div>
+</nav>
+
+<section class="guide-header">
+  <div class="breadcrumb"><a href="index.html">首页</a> / 攻略大全</div>
+  <h1>📖 攻略大全</h1>
+  <div class="meta">最全的洛克王国攻略合集 · 持续更新</div>
+</section>
+
+<div class="section">
+  <div class="container">
+
+    <!-- Search -->
+    <div class="search-box">
+      <input type="text" placeholder="搜索攻略标题、内容..." id="guideSearchInput">
+      <button id="guideSearchBtn">🔍 搜索</button>
+    </div>
+
+    <!-- Filter -->
+    <div class="filter-bar" id="filterBar">
+      <button class="filter-btn active" data-filter="all">全部</button>
+      <button class="filter-btn" data-filter="newbie">🌱 新手入门</button>
+      <button class="filter-btn" data-filter="pvp">⚔️ PVP天梯</button>
+      <button class="filter-btn" data-filter="boss">👾 BOSS攻略</button>
+      <button class="filter-btn" data-filter="team">👥 阵容推荐</button>
+      <button class="filter-btn" data-filter="event">🎪 活动攻略</button>
+      <button class="filter-btn" data-filter="dungeon">🏚️ 副本通关</button>
+      <button class="filter-btn" data-filter="pet">🐾 精灵培养</button>
+    </div>
+
+    <!-- Results Info -->
+    <p style="color: var(--text-muted); margin-bottom: 20px; font-size: 0.9rem;" id="resultInfo">
+      共 <span id="resultCount">0</span> 篇攻略
+    </p>
+
+    <!-- Guide Cards Grid -->
+    <div class="cards-grid" id="guidesGrid">
+      <!-- JS 动态填充 -->
+    </div>
+
+    <!-- Pagination -->
+    <div class="pagination" id="pagination">
+      <!-- JS 动态填充 -->
+    </div>
+
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-col">
+      <h4>🧭 导航</h4>
+      <a href="index.html">首页</a>
+      <a href="guides.html">攻略大全</a>
+      <a href="pets.html">精灵图鉴</a>
+    </div>
+    <div class="footer-col">
+      <h4>📂 攻略分类</h4>
+      <a href="guides.html?cat=pvp">PVP对战</a>
+      <a href="guides.html?cat=boss">BOSS攻略</a>
+      <a href="guides.html?cat=newbie">新手入门</a>
+      <a href="guides.html?cat=team">阵容推荐</a>
+    </div>
+    <div class="footer-col">
+      <h4>📞 关于</h4>
+      <a href="guide-detail.html?id=about">关于本站</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 洛克王国攻略站 · 玩家社区</p>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
